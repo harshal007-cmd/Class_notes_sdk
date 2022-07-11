@@ -1,1 +1,101 @@
-Win32Dev notes......
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\Hostx64\x64\cl.exe
+
+
+14 June 2022
+
+------------------------27 june 2022------------------------------------
+#Coding std by Charls simonii, hungarion notation
+1. Identifire names must begin with small case letter of data type.
+2. If varible name with multiple words, 1st letter should be capital.
+3 Identifire must be meaningfull, and if necessary can me made up of multiple words. 
+4. Follow the name of conventions which is using from generations.
+
+WNDCLASSEX,MSG- struct
+UINT-unsign int
+CS_HREDRAW (all capital and '_')= macro
+
+
+
+------------------------28 june 2022------------------------------------
+#Keywords
+1.Compiler specific/aka specifiers= 
+2.Internationlization= sizeof, _pascal
+
+
+****Steps to create Window(gui)
+
+1.Initialize WNDCLASS or WNDCLASSEX structure\
+-a. Specify Style of window
+-b. specity extra info about Window or Window class if any.
+-c. Specify callback funtion.
+-d. Specity instance handle.
+-e. specify background brush handle, icon handle, small icon handle, cusrser handle if any.
+-f. Specify menu name if any. 
+-e. Specify your custom window class name(MUST kara he).
+
+2. Register this class to WindowOS
+3. Create window in memory.
+4. Show the window on desktop.
+5. Draw\redraw\paint\repaint client area of window.
+6. Start life of application by message loop in which:
+-a. get your window's messages from OS
+-b. translate them to lower level message as needed.
+-c. dispatch them to WndProg.
+7. Inside wndprog:
+-a. Write message handlers of those message in which is intrested.
+-b. leave or passon the messages to OS.
+-c. when done means user closes window leave message loop(come out of it) and return from WinMain.
+
+#In all GUI based application (must be these 4 steps)
+1.entry point funtion
+2.message loop
+3.window
+4.callback funtion
+
+
+--------------------------------29 june 2022----------------------------------
+#Callback\Reentrent funtion rules
+
+1. You cannot decide no. and types of parameters.
+2. Its must have OS decided return value, not user's return value.
+3. Calling conventions must have OS decided. 	
+4. It must be declared globally, so that you, program and OS will keep in far segment.
+5. Only OS will call it, not you.
+
+
+---------------------------------------4 july 2022---------------------------------------
+1)WinMain is typedef
+=__WinMainCRTStarup
+=__mainCRTStartup()
+=__main()
+=main()
+CTR- C run time
+
+2)HINSTANCE or any thing that start with h =HANDLE,UINT, unsign int
+DBMI- Dos protected mode interface (fake mode by WindowsOS) for multitasking in WindowsOS.
+
+CS_HREDRAW | CS_VREDRAW= CS-Class style
+GetStockObject its return is HGDIOBJ(handle to graphic defice interface object)
+
+-----------------------------------5 july 2022---------------------------------------
+# CreateWindow function
+
+-4-7th para= is dimentions, 4-5 are x-y para, and 6-7  len and breadth
+-8th parameter= parant window, NULL means keep my parent window a 'desktop'.
+-9th =   menu handle, kept NULL.
+-10th= hInstance
+-11th= LPVOID, if you want to give any thing extra , add here.
+
+#ShowWindow
+TO show window on desktop
+
+#UpdateWindow
+-brush color to backgroung for that diag box, its called 'client area'.
+
+
+#Message loop
+
+
+------------------------------------6th july 2022----------------------------
+#
+
