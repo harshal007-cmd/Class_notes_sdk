@@ -99,3 +99,152 @@ TO show window on desktop
 ------------------------------------6th july 2022----------------------------
 #
 
+----------------------------------- 11th july 2022-----------------------------
+
+----------------------------------- 12th july 2022-------------------------------
+#RC file 
+
+#pragma concept:
+-'#pragma once' is tell compiler that cosider this header file once.
+
+#for Notepad hack - Rootkit, Windows Internel by Matt petrik,Assembly, Understanding linux kernel,OS.
+1.find resource
+2.find window
+3.enum window
+4.enum child window
+5.send, post message, WM command
+
+-----------------------------------26 july 2022--------------------------------------------
+#Multithtreading
+
+UI programming should be avoided in Thread.
+
+#How to kill a thread?(at some times)
+ 1.External
+-BOOL TerminateThread(HANDLE,DWORD);
+-Void ExitThread(DWORD);
+-BOOL GetExitCodeThread(HANDLE,LPDWORD)
+2.Internal
+
+
+---------------------------------31 Aug 2022---------------------------------
+#Sudo code to understand ClassFacotory program
+
+CO create internally ky karta tyacha sudo code
+
+1. hr = CoCreateInstance(CLSID_SumSubtract, NULL, CLSCTX_INPROC_SERVER, IID_ISum, (void**)&pISum);
+
+//Code inside above line is down here..		
+
+HRESULT __stdcall CoCreateInstanse(REFCLSID rclsid, LPIUNKOWN pUnkOuter, DWORD dwClsCOntext,REFIID riid, void **ppv)
+{
+	//Variables	
+	IClassFactory pIClassFactory=NULL;
+	HRESULT hr;
+		
+	//code
+	hr=CoGetClassObject(rclsid,dwClsContext,NULL,IID_IClassFactory,(void**)&pIClassFactory);
+	if(SUCCEEDED(hr))
+	{
+		pIClassFacotry->CreateInstance(pUnkOuter,riid,ppv);
+		pIClassFacotry->Release();
+	}
+	return hr;
+	
+}
+
+=================================05-09-2022======================================
+#Operator overload in C sudo
+
+inline BOOL operator==(const GUID& GuidOne, const GUID& GuidTwo)
+{
+	return(IsEqualGuid(GuidOne,GuidTwo));
+}
+
+
+
+=================================07-09-2022======================================
+#Properties
+
+1. Identity
+
+
+
+
+=======================DOT NET===========================
+===============7-11-2022=========================
+
+#Advantages of .NET
+1.Consistant programming model
+2.Siplified programming model
+3.Run once run always
+4.Siplified deplyment.
+5.Wide CPU arch and platform support
+6.Progrmming language intergration
+7.Simplified code reusabilty
+8.Automatic and effective memory management
+9.Type-safe varification
+10.Rich debugging support
+11.Consistance error status reporting
+12.Seculity
+13.Interoperability
+
+
+=====================14 Nov 2022================
+#.NET architecture
+
+1. Compiling .NET programming source code into managed module.
+2. Combining such one or more managed module to create .NET assembly.
+3. Loading CLR 
+4. Executing newley created .NET assembly into loaded CLR.
+
+# .NET programming languages (apply .NET after each language name)
+1.ADA (first programmer Ada luvles and language)
+2.APL - A programming language
+3.Componet pascal
+4.CAML- Catoagorical abstract machine language
+5.Cobolt- Common business oriented language
+6.Algol- Alogithmic language
+7.Delphi
+8.Eiffel
+9.Fortran- Formula translation language- lfc.exe- lahey fujitsu compiler
+10.Forth
+11.Haskell
+12.Logo
+13.Lisp-Locator and Identifire saparation protocol
+14.Auto Lisp
+15.Lexico
+16.Lua 
+17.Mercury
+18.ML- Meta language
+19.Mondrain
+20.Oberon
+21.Perl- practial extraction and reporting language
+22.Grep
+23.PHP- PHP(Personal Home Page) Hypertext Protocol
+24.Python
+25.Prolog
+26.RPG- Report Program generator
+27.Ruby
+28.Small Talk
+29.Scheme
+30.TCL/TK- Tool command language and toolkit
+31.Managed C++ - cl.exe
+32.C# - csc.exe 
+33.ILASM - Intermediate language assmbly language- ilasm.exe
+34.Visual Java/J#- vjc.exe
+35.VB - vbc.exe
+36.java script- jac.exe
+37.ASP .NET - aspnet_state.exe, aspnet_wp.exe
+38.F#- fsc.exe
+39.
+
+
+
+
+
+
+
+
+
+

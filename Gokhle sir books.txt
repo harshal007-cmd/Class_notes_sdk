@@ -1,0 +1,66 @@
+#End User books
+1.Unix concepts and application-sumitabha das
+2.A practical guide to linux- sobell
+
+#System programming
+1.Advance programming in Unix envoriment-richard stevens
+2.Unix network programming part 1-2 - W.richard
+3.Unix system programming using C++- shen
+4.Advance Unix programming - stephan prata
+5.Linux kernal developement - robert love
+6.Unix programming envoriment- Brain karighan , robr pike
+7.Linux system programming - LKD,robert love
+8.Linux programming interface- kerrisk
+
+#GUI Programing
+1.X-windows programming vol 1-9 - devide flange, danbeller
+2.X-windows system programming- Nabazot barkati
+3.X-windows sys toolket - Morgen swick
+4.OpenGL programming for windows - Mark Killguard
+5.QT programming- Dalhimer
+6.QT using C++ - blanchette
+
+#Device driver programming
+1.Writing Unix device driver- jorge pajari
+2.Linux karnel module programming- Pater salerman
+3.Linux device driver- Rubiny karbel hartmen
+
+#System Design
+1.Then Unix OS- Morris J. Bagh
+2.Unix internals- Uresh Vahalia
+3.Unix system V internals- Goodheart
+4.Lions commentry on Unix - John lion
+5.Solaris Internals - McDougall
+6.Design and Implementation of FreeBSD- McKussik 
+7.Operating system design and implementation -  Andrew tanemabaum
+8.Linux core kernal commnetry - Maxwell
+9.Understanding linux kernal - Cesati, Vovet
+
+#asselmbly
+IBM ssc - peter abel,
+Duntaman - assembly programing
+Wrox publication - linux assembly programming by Richard blum
+
+#COM books
+1. Inside COM by Dale Rogerson
+2. Inside DCOM(Distributed COM) Guy Eden and Anthony Eden 
+3. Enssential COM by Don Box
+4. Inside OLE2(Object Linking and Embedding) by Craige Brockschmidt
+----Advance COM
+5. Beginign ATL3 COM by Wrox publication by Richard grimes
+6. COM plus programming, Tata Mcgroghill by Mike Michel
+7. Inside ATL by Scott Wingo
+8. .NET and COM interoperability by Adam Nathan
+
+
+> .NET BOOKS=====
+1.Essensial .NET part 1 by Don box
+2.Essensial .NET part 2 by Don Box and Cris 
+3.CLR via CSharp by Jeffrey Richter
+4.Programming .NET by Jeff prosise
+5.Inside CSharp by Tom Archer
+6.Inside Microsoft IL(Intermidiate Language) Assembler by Serge Lidin
+7.Professional CSharp by Wrox publications
+8..NET and COM complete interoperablility guide by Adam Nathan
+9. Programming windows by using windows forms by Charls Petzolds.
+10..NET debugging by mario edvard

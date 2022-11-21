@@ -1,0 +1,37 @@
+-cl.exe /c /EHsc Window.cpp   (-cl.exe /c /EHsc /D UNICODE Window.cpp)
+-link.exe Window.obj User32.lib GDI32.lib /SUBSYSTEM:WINDOWS
+
+-rc.exe Window.rc
+##Thread
+-link.exe Window.obj Window.res User32.lib GDI32.lib *Kernel32.lib /SUBSYSTEM:WINDOWS
+
+##Implicite DLL
+1.-link.exe Window.obj Window.res User32.lib GDI32.lib MyMathOne.lib /SUBSYSTEM:WINDOWS
+2.-link.exe Window.obj Window.res User32.lib GDI32.lib /SUBSYSTEM:WINDOWS , add #pragma comment(lib,"filename.lib") in .c file 
+
+###Declspec DLL
+link.exe MyMathTwo.obj /DLL User32.lib /SUBSYSTEM:WINDOWS
+
+
+###DEF dll command
+link.exe MyMathTwo.obj /DLL /DEF:MyMathTwo.def User32.lib /SUBSYSTEM:WINDOWS
+
+##COM commands
+link.exe Class..File.obj /DLL /DEF:Class...File.def User32.lib /SUBSYSTEM:WINDOWS
+
+##COM client
+-
+-link.exe Window.obj Window.res User32.lib GDI32.lib ole32.lib oleaut32.lib /SUBSYSTEM:WINDOWS
+
+###IDL command
+midl.exe /h AutomationProxyStubHeader.h /iid AutomationProxyStubGuids.c /dlldata  AutomationProxyStubDllData.c /proxy  AutomationProxyStub.c AutomationServerTypeLib.idl
+
+### Proxy Dll create commad
+compile command-->cl.exe /c /EHsc /D REGISTER_PROXY_DLL AutomationProxyStub.c ...other 3 files
+link command-->link.exe AutomationProxyStub.obj AutomationProxyStubGuids.obj AutomationProxyStubDllData.obj /DLL /DEF:AutomationProxyStub.def user32.lib ole32.lib oleaut32.lib advapi32.lib rpcns4.lib rpcrt4.lib /SUBSYSTEM:WINDOWS
+
+###VB Client Command
+->vbc.exe /t:winexe /r:Microsoft.VisualBasic.dll /r:AutomationServerTypeLibForDotNet.dll VBAutomation.vb
+
+###CSharp client
+-->csc.exe /r:AutomationServerTypeLibForDotNet.dll CSharpAutomation.cs
