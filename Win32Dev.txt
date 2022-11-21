@@ -237,10 +237,32 @@ inline BOOL operator==(const GUID& GuidOne, const GUID& GuidTwo)
 36.java script- jac.exe
 37.ASP .NET - aspnet_state.exe, aspnet_wp.exe
 38.F#- fsc.exe
-39.
 
+================================21 Nov 2022=====================
+# .NET Imp Namespaces
 
-
+1. System -- It is common to all.
+2. System.Callations -- Data structures info
+3. System.Diagnostics -- For Debugging
+4. System.Drawing -- 2D drawing and images
+5. System.EnterptiseServices -- Enterprise management, object pools accross servers
+6. System.Globalozation -- Time,Currency,Calander, Language support
+7. System.IO -- files , streams and input/output
+8. System.Management -- Local OS management(WMI in COM)
+9. System.Net -- Every feature of networking
+10. System.Reflaction -- Deals with Metadata
+11. System.Resources -- Icon,cursor, data resources etc
+12. System.Runtime.InteropServies -- Deals with Interoptratibility
+13. System.Runtime.Remoting -- Knowing about object of other machine
+14. System.Runtime.Serialization -- Deals with serialization,deseri.,marshaling
+15. System.Security -- Deals with all security 
+16. System.ServiceProcess -- Deals with SCUM, windows services created by SCUM
+17. System.TextCapital -- Deals with Texts  
+18. System.Threading -- Deals with Multithreading and processing
+19. System.Windows.Forms -- All .NET GUI programming
+20. System.Web.UI -- deals with UI on Web
+21. System.Services -- deals with web services ASP.NET 
+22. System.XML -- Deals with parkup languages
 
 
 
