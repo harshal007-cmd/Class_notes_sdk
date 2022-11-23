@@ -178,7 +178,7 @@ inline BOOL operator==(const GUID& GuidOne, const GUID& GuidTwo)
 1.Consistant programming model
 2.Siplified programming model
 3.Run once run always
-4.Siplified deplyment.
+4.Simplified deplyment.
 5.Wide CPU arch and platform support
 6.Progrmming language intergration
 7.Simplified code reusabilty

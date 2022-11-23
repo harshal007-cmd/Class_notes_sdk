@@ -35,3 +35,9 @@ link command-->link.exe AutomationProxyStub.obj AutomationProxyStubGuids.obj Aut
 
 ###CSharp client
 -->csc.exe /r:AutomationServerTypeLibForDotNet.dll CSharpAutomation.cs
+
+###Hybrid program
+-->cl.exe /clr Filename.cpp
+-->csc.exe /t:winexe CSharpWindow.cs  for GUI
+-->csc.exe /t:winexe /res:MyIcon.ico CSharpWindow.cs for icon
+-->csc.exe /t:winexe /win32res:CSharpWindow.res /res:MyIcon.ico CSharpWindow.cs for Embedded icon , to show icon on explorer
