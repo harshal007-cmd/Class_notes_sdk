@@ -264,6 +264,50 @@ inline BOOL operator==(const GUID& GuidOne, const GUID& GuidTwo)
 21. System.Services -- deals with web services ASP.NET 
 22. System.XML -- Deals with parkup languages
 
+========================29 Nov 2022=============
+##UWP
+#Why UMP?
+
+1.Secure programming model
+2.Performance
+3.Create such a model where user is in ultimate control
+4.Isolation
+5.Easy Installation, Uninstallation and deployment
+6.Easy app management
+7.Fast and fluid experience of apps
+8.Content over Crome
+9.Easy multi device portability.
+
+
+======================30 nov 2022============================
+##Imp WinMD (Windows MetaData)files in WinRT
+
+1.Windows.system.winmd
+2.Windows.ApplicationModel.WinMD
+3.Windows.Devices.WinMD
+4.Windows.Drawing.WinMD
+5.Windows.Security.WinMD
+6.Windows.Storage.WinMD
+7.Windows.Graphics.WinMD
+8.Windows.Globalizatio.WinMD
+9.Windows.UI.WinMD
+10.Windows.UI.XAML.WinMD
+11.Windows.Media.WinMD
+12.Windows.Management.WinMD
+13.Windows.Web.WinMD
+14.Windows.NEtworking.WinMD
+15.Windows.Foundation.WinMD
+16.Windows.
+
+
+
+
+
+
+
+
+
+
 
 
 
