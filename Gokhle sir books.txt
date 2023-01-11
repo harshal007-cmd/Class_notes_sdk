@@ -64,3 +64,20 @@ Wrox publication - linux assembly programming by Richard blum
 8..NET and COM complete interoperablility guide by Adam Nathan
 9. Programming windows by using windows forms by Charls Petzolds.
 10..NET debugging by mario edvard
+
+#C++ book
+1.C++ primer- stanly lipman
+2.Inside C++ object model- S.L
+3.C++ design and evolution - elis and stustrup
+4.C++ programming- strustrup
+5.C++ complete refrence- 
+
+#DS books
+1.Aron tanimbum
+2.Surtaj sahani
+3.Stonin
+
+#ARM
+1.ARM system on chip
+2.ARM programmers guide
+3.ARM ARM
