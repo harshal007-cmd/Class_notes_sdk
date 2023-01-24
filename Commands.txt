@@ -46,3 +46,10 @@ link command-->link.exe AutomationProxyStub.obj AutomationProxyStubGuids.obj Aut
 -->csc.exe /t:library DotNetServer.cs 
 -->ildasm /adv DotNetServer.dll  
 -->regasm.exe filename.dll /tlb  for create tlb file
+
+##UWP
+-->cl.exe /c /EHsc /ZW filename.cpp
+-->link.exe HelloWorld.obj vccorlib.lib runtimeobject.lib /SUBSYSTEM:CONSOLE
+
+###adding data to check git
+

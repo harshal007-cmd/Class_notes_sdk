@@ -300,10 +300,41 @@ inline BOOL operator==(const GUID& GuidOne, const GUID& GuidTwo)
 16.Windows.
 
 
+================================== 6 Dec 2022 =========================
+#UWP files
+1.App.xaml-> Entry point 
+ -App.xaml.h 
+ -app.xaml.cpp
+
+2.Mainpage.Xaml
+ -MainPage.Xaml.h
+ -MainPage.Xaml.cpp
+
+3.Assets folder containing Icon logos and splsh images
+
+4.Package.appxmanifest
+
+5.pch.h
+6.pch.cpp
 
 
+##Common UI object heirarkey
 
+Control
+|
+Containt Control __ User Contol
+|                           \
+ButtonBase		   Page
+|	\
+Button   Frame
 
+Pannel	 TextBlock	Object Vocabulary
+|||			|
+canvas 			DependacyObject
+Grid			|
+StackPannel		UI Element
+			|
+			FrameworkElement
 
 
 
