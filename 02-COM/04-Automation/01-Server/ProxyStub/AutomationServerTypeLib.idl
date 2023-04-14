@@ -1,0 +1,43 @@
+import "unknwn.idl";
+//IMyMath Interface defination block
+
+[    //attribute block 
+	object,
+	uuid(99FBF79C-4932-43E8-9CE5-44990AD760DE),
+	helpstring("This is IMyMath declaration"),
+	pointer_default(unique),
+	dual, //IMyMath interface support IclassFactory and Automation
+	oleautomation
+]
+
+//declarion block
+interface IMyMath :IDispatch
+{
+	import "oaidl.idl";
+	HRESULT SumOfTwoIntergers([in]int, [in]int, [out, retval]int*);
+	HRESULT SubtractionOfTwoIntergers([in]int, [in]int, [out, retval]int*);
+};
+
+//Lib defination block
+[
+	uuid(96842FCA-EFFF-4567-8E0D-92A4D10CB6F9), //from cpp
+	version(1.0),
+	helpstring("This is Automation server type lib")
+]
+
+library AutomationServerTypeLib
+{
+	importlib("stdole32.tlb");
+
+	//Co class defination block
+	[
+		uuid(EE8E1D7A-5E78-4078-89C7-8A3B0BA1D954), //clsid
+		helpstring("Automation server co class")
+	]
+	coclass CMyMath
+	{
+		[default] interface IMyMath;
+	};
+
+};
+

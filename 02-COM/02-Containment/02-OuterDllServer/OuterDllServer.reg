@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{C7620579-88DB-42A6-B9F0-5691F6590214}]
+@="My Containment dll server"
+
+[HKEY_CLASSES_ROOT\CLSID\{C7620579-88DB-42A6-B9F0-5691F6590214}\InprocServer32]
+@="C:\\Windows\\System32\\InnerDllServer.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{441B1396-A9C5-4515-8615-243577C8350B}]
+@="My Containment outer dll server"
+
+[HKEY_CLASSES_ROOT\CLSID\{441B1396-A9C5-4515-8615-243577C8350B}\InprocServer32]
+@="C:\\Windows\\System32\\OuterDllServer.dll"

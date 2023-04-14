@@ -1,0 +1,11 @@
+ColdFusion, Perl, Oracle DB, PHP, shell, MySQL, C, JavaScript, JavaServer Faces, Tomcat, Jboss, Apache
+C/C++ 11, Java
+manual testing, lab support
+
+SC1000:
+C/C++, SL1 (proprietary) IMP, Java EE (JBoss), SIP, H.323, ISDN, RTP/RTCP, TCP/IP, MySQL, VxWorks 5.5, Linux, TLS, DTLS, IPSec, multithreaded programming, POSIX
+ 
+ADA:
+C/C++, Java, SIP, TCP/IP, Postgress, SDP, RTP/RTCP, Linux(RedHat), multithreaded programming
+
+kumar megapolice

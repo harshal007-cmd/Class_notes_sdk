@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{EAF1F3F8-40BD-49CE-B2CD-3D6FAAC20376}]
+@="My Containment dll server"
+
+[HKEY_CLASSES_ROOT\CLSID\{EAF1F3F8-40BD-49CE-B2CD-3D6FAAC20376}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationInnerWithRegFile.dll"
+
